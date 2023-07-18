@@ -1,6 +1,31 @@
+
+$color_header :black;
+
 .layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
-    width: 650px;
+    width: 600px;
     background-color: aqua;
     margin: 0 auto;
+    padding: 0;
 }
+
+.header {
+    order: 0;
+    height: 50px;
+    width: 100%;
+    background-color: $color_header;
+  }
+  
+.content {
+    order: 1;
+  }
+  
+.footer {
+    height: 85px;
+    width: 100%;
+    background-color: $color_header;
+  }
+

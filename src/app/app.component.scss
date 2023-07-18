@@ -1,5 +1,7 @@
 
 $color_header :black;
+$border:3px solid white;
+$header_background_image: "../assets/img/wood.jpg";
 
 .layout{
     display: flex;
@@ -10,22 +12,22 @@ $color_header :black;
     background-color: aqua;
     margin: 0 auto;
     padding: 0;
+    border: $border;
 }
 
 .header {
     order: 0;
-    height: 50px;
+    height: 80px;
     width: 100%;
-    background-color: $color_header;
+    background-image: url($header_background_image) ;
+    background-repeat: no-repeat;
+    border-bottom: $border ;
+
   }
   
 .content {
     order: 1;
   }
   
-.footer {
-    height: 85px;
-    width: 100%;
-    background-color: $color_header;
-  }
+
 

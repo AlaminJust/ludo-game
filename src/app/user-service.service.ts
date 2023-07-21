@@ -1,9 +1,20 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class UserServiceService {
 
-  constructor() { }
+  constructor(private http: HttpClient) 
+  {
+    
+  }
+
+  getUserImage(url:string): Observable<Blob>
+  {
+    return this.http.get(url,{responseType: 'blob'});
+  }
 }

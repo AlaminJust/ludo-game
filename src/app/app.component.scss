@@ -2,6 +2,7 @@
 $color_header :black;
 $border:3px solid white;
 $header_background_image: "../assets/img/wood.jpg";
+$content_background_image: "https://i.ibb.co/mHThKKx/Capture-2021-09-29-10-31-35-01.jpg";
 
 .layout{
     display: flex;
@@ -9,7 +10,6 @@ $header_background_image: "../assets/img/wood.jpg";
     justify-content: space-between;
     height: 100vh;
     width: 600px;
-    background-color: aqua;
     margin: 0 auto;
     padding: 0;
     border: $border;
@@ -25,8 +25,11 @@ $header_background_image: "../assets/img/wood.jpg";
 
   }
   
-.content {
-    order: 1;
+  .content {
+    background-image: url($content_background_image); /* Set the background image for the .content div */
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust background size to your preference */
+    flex-grow: 1;
   }
   
 

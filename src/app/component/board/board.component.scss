@@ -1,13 +1,64 @@
+//.game
+$game_height: 60%;
+$game_width: 100%;
 
-$height: 60%;
-$width: 100%;
+//.house
+$house_size:32%;
+
+//.box
+$box_size:70%;
+
 
 .game{
     position: relative;
-    height: $height;
-    width: $width;
-    background-color: black;
+    height: $game_height;
+    width: $game_width;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    //for .house
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.house{
+    position: absolute;
+    width:$house_size;
+    height:$house_size;
+    border: 1px solid rgb(4, 24, 36);
+}
+
+.box{
+    position: relative;
+    width: $box_size;
+    height: $box_size;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+}
+
+.green {
+    background-color: #01A147;
+    bottom: 0;
+    left: 0;
+}
+.red {
+    background-color: #ec1d27;
+    bottom: 0;
+    right: 0;
+}
+.yellow {
+    background-color: #ffe01b;
+    top: 0;
+    left: 0;
+}
+.gray {
+    background-color: #29b6f6;
+    top: 0;
+    right: 0;
 }

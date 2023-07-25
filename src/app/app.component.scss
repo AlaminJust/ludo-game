@@ -9,10 +9,9 @@ $content_background_image: "https://i.ibb.co/6DPMT2w/Capture-2021-09-29-10-31-35
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    width: 600px;
+    width: 550px;
     margin: 0 auto;
     padding: 0;
-    border: $border;
 }
 
 .header {
@@ -30,6 +29,7 @@ $content_background_image: "https://i.ibb.co/6DPMT2w/Capture-2021-09-29-10-31-35
     background-repeat: no-repeat;
     background-size: cover; /* Adjust background size to your preference */
     flex-grow: 1;
+    position: relative;
   }
   
 

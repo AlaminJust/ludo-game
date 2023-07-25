@@ -8,6 +8,8 @@ $house_size:32%;
 //.box
 $box_size:70%;
 
+//for .square
+$square_size: 20%;
 
 .game{
     position: relative;
@@ -30,6 +32,25 @@ $box_size:70%;
     border: 1px solid rgb(4, 24, 36);
 }
 
+.greenhouse
+{
+    bottom: 0;
+    left: 0;
+}
+.redhouse{
+    bottom: 0;
+    right: 0;
+}
+.yellowhouse
+{
+    right: 0;
+    top: 0;
+}
+.grayhouse{
+    left: 0;
+    top: 0;
+}
+
 .box{
     position: relative;
     width: $box_size;
@@ -42,23 +63,43 @@ $box_size:70%;
     border: 1px solid black;
 }
 
+.square{
+    position: absolute;
+    height: $square_size;
+    width: $square_size;
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+
 .green {
     background-color: #01A147;
-    bottom: 0;
-    left: 0;
 }
 .red {
     background-color: #ec1d27;
-    bottom: 0;
-    right: 0;
 }
 .yellow {
     background-color: #ffe01b;
-    top: 0;
-    left: 0;
 }
 .gray {
     background-color: #29b6f6;
-    top: 0;
-    right: 0;
 }
+
+
+.square-one {
+    top:12%;
+    left:12%;
+}
+.square-two {
+    top: 12%;
+    right: 12%;
+}
+.square-three {
+    bottom: 12%;
+    left: 12%;
+}
+.square-four {
+    bottom: 12%;
+    right: 12%;
+}
+

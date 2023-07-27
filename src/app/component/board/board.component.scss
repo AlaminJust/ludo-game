@@ -3,13 +3,20 @@ $game_height: 60%;
 $game_width: 100%;
 
 //.house
-$house_size:32%;
+$house_size:37%;
 
 //.box
-$box_size:70%;
+$box_size:65%;
 
 //for .square
-$square_size: 20%;
+$square_size: 25%;
+
+//for .home
+$home_top:50%;
+$home_left:50%;
+$home_height:26.5%;
+$home_width:26.5%;
+
 
 .game{
     position: relative;
@@ -103,3 +110,14 @@ $square_size: 20%;
     right: 12%;
 }
 
+//Home
+.home{
+    position: absolute;
+    top: $home_top;
+    left: $home_left;
+    width: $home_width;
+    height: $home_height;
+    border: 2px solid black;
+    transform: translate(-50%, -50%);
+    border-bottom: 10% solid #e53935;
+}
